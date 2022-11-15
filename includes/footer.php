@@ -316,7 +316,7 @@
                 <h2 class="text-white fw-bold">
                     Envíanos tu consulta
                 </h2>
-                <form class="form-group" id="form-contacto">
+                <form onsubmit="enviarCorreo(event)" class="form-group" id="formcontacto">
                     <input type="text" class="form-control my-3" name="nombre" placeholder="Ingrese nombre" required="">
                     <input type="text" class="form-control my-3" name="correo" placeholder="Ingrese email" required="">
                     <textarea class="form-control mb-4" rows="4" name="consulta" placeholder="Escribe tu consulta ..." required=""></textarea>
@@ -391,17 +391,18 @@
 <!-- Para llamar a los iconos -->
 <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 <script>
-    const enviarCorreo = (e) => {
+    function enviarCorreo(e){
         e.preventDefault();
-        let form = new FormData(document.getElementById("form-contacto"));
-        fetch('/admin/email/contacto', {
-            method: "POST",
-            body: form
-        }).then(function(res) {
+        const data = new FormData(document.getElementById('formcontacto'));
+        fetch('./lib/correo_mailer.php',{
+            method:'POST',
+            body:data
+        }).then(function(res){
             return res.text();
-        }).then(function(res) {
-            alert(res);
+        }).then(function(res){
+           alert(res);
+        }).then(function(res){
             e.target.reset();
         });
-    };
+    }
 </script>
