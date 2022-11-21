@@ -211,7 +211,7 @@
     .btn-mas label {
         display: block;
         text-decoration: none;
-       
+
         color: #fff;
         width: 55px;
         height: 55px;
@@ -251,13 +251,14 @@
         transform: rotate(135deg);
         font-size: 25px;
     }
-    .contain{
-        display:none;
+
+    .contain {
+        display: none;
     }
 
     @media only screen and (max-width: 450px) {
 
-        
+
         .topcontrol4,
         .topcontrol4,
         .topcontrol5,
@@ -266,9 +267,9 @@
             display: none;
         }
 
-        .contain{
-        display:block;
-    }
+        .contain {
+            display: block;
+        }
     }
 </style>
 <footer class="container-fluid px-0" id="footer">
@@ -320,12 +321,37 @@
                     <input type="text" class="form-control my-3" name="nombre" placeholder="Ingrese nombre" required="">
                     <input type="text" class="form-control my-3" name="correo" placeholder="Ingrese email" required="">
                     <textarea class="form-control mb-4" rows="4" name="consulta" placeholder="Escribe tu consulta ..." required=""></textarea>
-                    <button class="btn btn-warning text-white" type="submit">Enviar <i class="fas fa-chevron-circle-right"></i></button>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-warning text-white" type="submit">Enviar <i class="fas fa-chevron-circle-right"></i></button>
+                        <div class="form-check" data-bs-toggle="modal" data-bs-target="#modalPoliticas">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                He leído y acepto las políticas de privacidad
+                            </label>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalPoliticas" tabindex="-1" aria-labelledby="modalPoliticasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPoliticasLabel" style="color: var(--color2);">POLÍTICAS DE PRIVACIDAD</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="./assets/files/politicas.pdf" width="100%" height="500"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <br>
+
     <div class="barinf">
         <span>Colegio Alexander Fleming © 2022</span>
         <a href="https://cubicol.pe" class="ms-auto">Desarrollado por Sensoft Solutions</a>
@@ -378,7 +404,7 @@
         <input type="checkbox" id="btn-mas">
         <div class="redes">
             <a href="https://www.facebook.com/colegioalexanderfleming?_rdc=1&_rdr" style=" background: #3b5998;" class="fa fa-facebook" target="_blank"></a>
-            <a href="https://www.youtube.com/channel/UCpXDS48W4KXTdld0qaDmCuA" style=" background: #f22224;"class="fa fa-youtube" target="_blank"></a>
+            <a href="https://www.youtube.com/channel/UCpXDS48W4KXTdld0qaDmCuA" style=" background: #f22224;" class="fa fa-youtube" target="_blank"></a>
             <a href="https://twitter.com/ALEXAND35242444" class="fa fa-twitter" style=" background: #00acee;" target="_blank"></a>
             <a href="https://www.tiktok.com/@alexanderfleming365" class="fab fa-tiktok" style=" background: black;" target="_blank"></a>
         </div>
@@ -391,17 +417,17 @@
 <!-- Para llamar a los iconos -->
 <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 <script>
-    function enviarCorreo(e){
+    function enviarCorreo(e) {
         e.preventDefault();
         const data = new FormData(document.getElementById('formcontacto'));
-        fetch('./lib/correo_mailer.php',{
-            method:'POST',
-            body:data
-        }).then(function(res){
+        fetch('./lib/correo_mailer.php', {
+            method: 'POST',
+            body: data
+        }).then(function(res) {
             return res.text();
-        }).then(function(res){
-           alert(res);
-        }).then(function(res){
+        }).then(function(res) {
+            alert(res);
+        }).then(function(res) {
             e.target.reset();
         });
     }

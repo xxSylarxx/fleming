@@ -22,9 +22,8 @@ try {
     //$mail->setFrom('alexanderfleming@cubicol.com.pe', 'ALEXANDER FLEMING');
     $mail->setFrom('alexanderfleming@cubicol.com.pe');
     $mail->FromName = 'PAG. WEB';
-    $mail->addAddress('luismiguel.tm7@gmail.com', 'ALEXANDER FLEMING');
     //$mail->addAddress('geraldochoa@alexanderfleming.edu.pe', 'ALEXANDER FLEMING');
-    // $mail->addCC('cc@example.com');
+    //$mail->addCC('karina.coordinacionweb@gmail.com');
 
     //Content
     $mail->isHTML(true);

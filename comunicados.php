@@ -427,6 +427,33 @@
                 <div class="col-lg-8">
                     <div class="row my-2" id="noticias">
                         <div class="col-md-4 h-100 px-3 my-3">
+                            <a href="view.php?id=4">
+                                <div class="card shadow-sm " style="background: rgb(248, 248, 248);">
+                                    <span class="news">Comunicados</span>
+                                    <img src="./assets/img/galeria/portada_boletin2023.jpg" width="100%" height="300">
+
+                                    <div class="card-body">
+
+                                        <h5 class="fw-bold text-uppercase" style="font-size: 18px;color:var(--color11);">BOLETÍN INFORMATIVO 2023</h5>
+
+                                        <div class="detalle">
+
+                                        Boletín Informativo 2023
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-footer text-info" style="background: transparent; font-size: 16px;">
+                                        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+
+                                        <span class="ms-2">18-11-2022</span>
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 h-100 px-3 my-3">
                             <a href="view.php?id=1">
                                 <div class="card shadow-sm " style="background: rgb(248, 248, 248);">
                                     <span class="news">Comunicados</span>

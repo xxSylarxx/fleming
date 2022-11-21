@@ -90,7 +90,7 @@
             font-size: 3.5rem;
             color: white;
             position: relative;
-            font-weight:bold;
+            font-weight: bold;
         }
 
         .tittle-banner2 {
@@ -696,6 +696,32 @@
         <div class="container-fluid">
             <div class="row" style="padding-left:8%;padding-right:8%;">
                 <div class="col-md-4 px-3 my-3">
+                    <a href="view.php?id=4">
+                        <div class="card shadow-sm h-100" style="background: rgb(248, 248, 248);">
+                            <span class="news">Comunicados</span>
+                            <img src="./assets/img/galeria/portada_boletin2023.jpg" width="100%" height="300">
+
+                            <div class="card-body">
+
+                                <h5 class="fw-bold text-uppercase" style="font-size: 18px;color:var(--color9);">Boletín Informativo 2023</h5>
+
+                                <div class="detalle">
+                                    Boletín Informativo 2023
+                                </div>
+
+                            </div>
+
+                            <div class="card-footer text-info" style="background: transparent; font-size: 16px;">
+                                <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+
+                                <span class="ms-2">18-11-2022</span>
+
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 px-3 my-3">
                     <a href="view.php?id=1">
                         <div class="card shadow-sm h-100" style="background: rgb(248, 248, 248);">
                             <span class="news">Comunicados</span>
@@ -748,7 +774,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 px-3 my-3">
+                <!-- <div class="col-md-4 px-3 my-3">
                     <a href="view2.php?id=3">
                         <div class="card shadow-sm h-100" style="background: rgb(248, 248, 248);">
                             <span class="news">Eventos</span>
@@ -774,7 +800,7 @@
 
                         </div>
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -832,45 +858,6 @@
     </section>
     <br><br><br>
     <div class="w-100" style="padding-top: 4%; padding-bottom: 2%;">
-        <!-- <div class="container">
-            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
-                <div class="col-xl h-100 col-sm text-center my-auto">
-                    <h1 style="color:var(--color1);font-weight:bold;"><span>CONVENIOS</span></h1>
-                    <p id="p-slider-reconocimientos">Con el fin de brindar mayores beneficios y facilidades,
-                        contamos con diversos convenios exclusivos para nuestros estudiantes.</p>
-                </div>
-                <div class="col-lg-5 my-auto">
-                    <div class="row">
-                        <div class="col-xl w-100 pl-0 col-sm text-center" style="height: 180px;">
-                            <div class="swiper mySwiper swiper-initialized swiper-vertical swiper-pointer-events swiper-backface-hidden">
-                                <div class="swiper-wrapper" id="swiper-wrapper-6ba5f0cc9452103c5" aria-live="off" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-                                    <div class="swiper-slide swiper-slide-active" style="height: 300px;" role="group" aria-label="1 / 5">
-                                        <img src="./assets/img/fotos/universidad.png" style="position:relative;" width="380">
-
-                                        <p style="position:absolute;margin-top:15rem;">Convenio de cooperación interinstitucional entre
-                                            Universidad católica San Pablo y la institución educativa particular Alexander Fleming </p>
-                                    </div>
-                                    <div class="swiper-slide swiper-slide-next" style="height: 300px;" role="group" aria-label="2 / 5"><img src="./assets/img/fotos/ucsm.png" style="position:relative;" width="380">
-                                        <p style="position:absolute;margin-top:15rem;">Convenio de cooperación interinstitucional entre
-                                            Universidad Católica de Santa María y la
-                                            institución educativa particular Alexander Fleming</p>
-                                    </div>
-                                    <div class="swiper-slide" style="height: 300px;" role="group" aria-label="3 / 5"><img src="./assets/img/fotos/office365.png" width="380"></div>
-                                    <div class="swiper-slide" style="height: 300px;" role="group" aria-label="4 / 5"><img src="./assets/img/fotos/zoom.png" width="380"></div>
-                                    <div class="swiper-slide" role="group" aria-label="5 / 5" style="height: 300px;"><img src="./assets/img/fotos/tinkercad.png" width="380"></div>
-
-
-                                </div>
-                                <div class="swiper-pagination"></div>
-                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
         <div class="container">
             <div class="row">
                 <div class="col-xl h-100 col-sm text-center my-auto">
@@ -943,8 +930,8 @@
         });
     </script>
     <!-- Script para carousel automatico -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         let owlone = $('#owl-one');
         let owltwo = $('#owl-two');
